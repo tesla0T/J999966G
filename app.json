@@ -1,16 +1,16 @@
 {
-    "name": "سورس ايــثــون ميوزك بوت الاول في التلجرام قناتنا الرسميه @EITHON1",
+    "name": "سورس علوش ميوزك",
     "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by pytgcalls and pyrogram",
-    "logo": "https://telegra.ph/file/4763d6135a6dec50390b7.jpg",
+    "logo": "https://telegra.ph/file/cbefab50d720cd7cb5ca8.jpg",
     "keywords": [
         "pytgcalls",
         "telegram bot",
         "video stream",
         "pyrogram"
     ],
-    "website": "https://t.me/EITHON1",
-    "repository": "https://github.com/pqnzbmmwQ92/ll",
-    "success_url": "https://t.me/EITHON1",
+    "website": "https://t.me/kafren1",
+    "repository": "https://github.com/alfaransy/Sources",
+    "success_url": "https://t.me/kafren1",
     "env": {
         "API_ID": {
             "description": "your API_ID from my.telegram.org",
