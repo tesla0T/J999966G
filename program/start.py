@@ -52,8 +52,8 @@ async def _human_time_duration(seconds):
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""👋🏻 **اهلا بك {message.from_user.mention()} !**\n
-🎗 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **انا بوت استطيع تشغيل الاغاني والموسيقى في المكالمات  الصوتية! ᥀︙**
+        f"""📍 **اهلا بك {message.from_user.mention()} !**\n
+📍 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **انا بوت استطيع تشغيل الاغاني والموسيقى في المكالمات  الصوتية! ᥀︙**
 
 ᥀︙ **لمعرفة اوامر هذا البوت اضغط على » الاوامر الاساسية!**
 
@@ -63,26 +63,26 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ اضف البوت الى مجموعتك",
+                        "• اضف البوت الى مجموعتڪ •",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("‹طريقة التشغيل›", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("‹ طريقة التشغيل ›", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("‹الاوامر الاساسية›", callback_data="cbcmds"),
-                    InlineKeyboardButton("‹المطور›", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("‹ الاوامر الاساسية ›", callback_data="cbcmds"),
+                    InlineKeyboardButton("‹ المطور ›", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹قناة السورس›", url=f"https://t.me/EITHON1"
+                        "‹ قناة السورس ›", url=f"https://t.me/kafren1"
                     ),
                     InlineKeyboardButton(
-                        "‹قناة البوت›", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "‹ قناة البوت ›", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹لتنصيب بوت مماثل›", url="https://t.me/TTTLL0"
+                        "‹ قناة اشعار حب وغزل ❤️🥺 ›", url="https://t.me/kafren1"
                     )
                 ],
             ]
@@ -102,9 +102,9 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("اوامر التشغيل", url=f"https://t.me/EITHON1"),
+                InlineKeyboardButton("‹ قناة السوࢪس ›", url=f"https://t.me/kafren1"),
                 InlineKeyboardButton(
-                    "مطور السورس", url=f"https://t.me/TTTLL0"
+                    "مطور السورس", url=f"https://t.me/taho11"
                 ),
             ]
         ]
@@ -129,22 +129,22 @@ async def src(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("اوامر التشغيل", url=f"https://t.me/EITHON1"),
+                InlineKeyboardButton("‹ قناة السوࢪس ›", url=f"https://t.me/kafren1"),
                 InlineKeyboardButton(
-                    "مطور السورس", url=f"https://t.me/TTTLL0"
+                    "‹ مطور السورس ›", url=f"https://t.me/taho11"
                 ),
             ]
         ]
     )
 
-    alive = f"**هلا {message.from_user.mention()}, i'm {BOT_NAME}**\n\nℹ️ 🎶 هذا هو سورس ايـــثــون ميوزك𖠀\nℹ️  اختصاص هذا البوت لتشغيل مقاطع صوتية او مقاطع الفيديو في المكالمات الصوتية \n\n**⚒ لعرض اوامر البوت يمكنك مشاهده الفيدو او قم بدخول الى خاص البوت وتابع التعليمات** 💖"
+    alive = f"**هلا {message.from_user.mention()}, i'm {BOT_NAME}**\n\nℹ️ 🎶 هذا هو سورس علوش ميوزك𖠀\nℹ️  اختصاص هذا البوت لتشغيل مقاطع صوتية او مقاطع الفيديو في المكالمات الصوتية \n\n**⚒ لعرض اوامر البوت يمكنك مشاهده الفيدو او قم بدخول الى خاص البوت وتابع التعليمات** 💖"
 
     await message.reply_photo(
         photo=f"{ALIVE_IMG}",
         caption=alive,
         reply_markup=keyboard,
     )
-# حتى هذا تعدل عليه قول ايــثــون تاج راسك يلا 😂
+# 
 
 @Client.on_message(command(["بنك", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
 async def ping_pong(client: Client, message: Message):
