@@ -1,5 +1,5 @@
 # Copyright (C) 2021 By VeezMusicProject
-# تم التعريب بواسطه سورس ايــثــون بموجب حقوق النشر تخمط اذكر المصدر لاهينك 
+# تم التعريب بواسطه سورس ايفان بموجب حقوق النشر تخمط اذكر المصدر لاهينك 
 from driver.queues import QUEUE
 from pyrogram import Client, filters
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
@@ -16,8 +16,8 @@ from config import (
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""👋🏻 **اهلا بك[{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
-🎗 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) انا بوت استطيع تشغيل الموسيقى والفيديو في المكالمات الصوتية! ᥀︙**
+        f"""📍 **اهلا بك[{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
+📍 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) انا بوت استطيع تشغيل الموسيقى والفيديو في المكالمات الصوتية! ᥀︙**
 
 ᥀︙ **لمعرفة اوامر هذا البوت اضغط على » الاوامر الاساسية!**
 
@@ -26,26 +26,26 @@ async def cbstart(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ اضفني الى مجموعتك",
+                        "• اضفني الى مجموعتڪ •",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("‹طريقة التشغيل›", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("‹ طريقة التشغيل ›", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("‹الاوامر الاساسية›", callback_data="cbcmds"),
-                    InlineKeyboardButton("‹المطور›", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("‹ الاوامر الاساسية ›", callback_data="cbcmds"),
+                    InlineKeyboardButton("‹ المطور ›", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹قناة السورس›", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "‹ كروب البوت ›", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "‹قناة البوت›", url=f"https://t.me/EITHON1"
+                        "‹ قناة السوࢪس ›", url=f"https://t.me/kafren1"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹💰 شراء نسخة مدفوعة›", url="https://t.me/TTTLL0"
+                        "‹ مطور السورس ›", url="https://t.me/taho11"
                     )
                 ],
             ]
@@ -163,7 +163,7 @@ async def cbsudo(_, query: CallbackQuery):
             [[InlineKeyboardButton("🔙 رجوع", callback_data="cbcmds")]]
         ),
     )
-#تم تعريب وتعديل هذا الملف بواسطه مطورين ايثون تخمط اختك انيجها 😂
+#تم تعريب وتعديل هذا الملف بواسطه ايفان تخمط اختك انيجها 😂
 
 @Client.on_callback_query(filters.regex("cbmenu"))
 async def cbmenu(_, query: CallbackQuery):
@@ -190,7 +190,7 @@ async def cbmenu(_, query: CallbackQuery):
              ),
          )
     else:
-        await query.answer("❌ ماكو شي مشتغل يمعود؟", show_alert=True)
+        await query.answer("❌ ماكو شي مشتغل لتلح؟", show_alert=True)
 
 
 @Client.on_callback_query(filters.regex("cls"))
