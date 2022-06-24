@@ -130,7 +130,7 @@ async def start(client: Client, message: Message):
 async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{DEV_PHOTO}",
-        caption=f"""᥀︙𝖣𝖾𝗏 𝖭𝖾𝗆𝖺 ↬[- 𝖸𝗎𝖮𝗌𝗌ᥱ𝖥 .](t.me/GGG66) \n\n ᥀︙𝖣𝖾𝗏 𝗂𝖽 ↬ 1005593710 \n\n᥀︙𝖣𝖾𝗏 𝖡𝗂𝗈 ↬ شلي بابڪم باب ، الله مـا مسدۅد : @rvrrrrv .""",
+        caption=f"""᥀︙𝖣𝖾𝗏 𝖭𝖾𝗆𝖺 ↬[- 𝖸𝗎𝖮𝗌𝗌ᥱ𝖥 .](t.me/GGG66) \n \n ᥀︙𝖣𝖾𝗏 𝗂𝖽 ↬ 1005593710 \n \n᥀︙𝖣𝖾𝗏 𝖡𝗂𝗈 ↬ شلي بابڪم باب ، الله مـا مسدۅد : @rvrrrrv .""",
         reply_markup=InlineKeyboardMarkup(
          [
             [
