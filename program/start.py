@@ -107,7 +107,7 @@ async def start_(client: Client, message: Message):
 @Client.on_message(command(["سورس تيسلا", f"سورس ايفان", f"يا سورس", f"السورس", f"alive", f"live"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/29b4962106bc42c258420.jpg",
+        photo=f"https://telegra.ph/file/e77857a6510df13b1b2d3.jpg",
         caption=f"""Welcome to Source Evan for Music Bots""",
         reply_markup=InlineKeyboardMarkup(
          [
