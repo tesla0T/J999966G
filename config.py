@@ -1,32 +1,107 @@
-import os
-from os import getenv
-from dotenv import load_dotenv
-
-load_dotenv()
-admins = {}
-SESSION_NAME = getenv("SESSION_NAME", "session")
-BOT_TOKEN = getenv("BOT_TOKEN")
-BOT_NAME = getenv("BOT_NAME")
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
-OWNER_NAME = getenv("OWNER_NAME")
-ALIVE_NAME = getenv("ALIVE_NAME")
-BOT_PHOTO = getenv("BOT_PHOTO")
-DEV_PHOTO = getenv("DEV_PHOTO")
-DEV_NAME = getenv("DEV_NAME")
-BOT_USERNAME = getenv("BOT_USERNAME")
-UPSTREAM_REPO = getenv("UPSTREAM_REPO")
-UPSTREAM_BRANCH = getenv("UPSTREM_BRANCH", "main")
-ASSISTANT_NAME = getenv("ASSISTANT_NAME")
-GROUP_SUPPORT = getenv("GROUP_SUPPORT", "T9T99T")
-UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "vrrrrvr")
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "1005593710").split()))
-COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "").split())
-ALIVE_IMG = getenv("ALIVE_IMG", "https://telegra.ph/file/e77857a6510df13b1b2d3.jpg")
-DURATION_LIMIT = int(getenv("DURATION_LIMIT", "900"))
-UPSTREAM_REPO = getenv("https://github.com/tesla0T/Sources-1")
-IMG_1 = getenv("IMG_1", "https://telegra.ph/file/e77857a6510df13b1b2d3.jpg")
-IMG_2 = getenv("IMG_2", "https://telegra.ph/file/e77857a6510df13b1b2d3.jpg")
-IMG_3 = getenv("IMG_3", "https://telegra.ph/file/e77857a6510df13b1b2d3.jpg")
-IMG_4 = getenv("IMG_4", "https://telegra.ph/file/e77857a6510df13b1b2d3.jpg")
-IMG_5 = getenv("IMG_5", "https://telegra.ph/file/e77857a6510df13b1b2d3.jpg")
+{
+    "name": "سورس ايفان الرسمي",
+    "description": "تابع قناة لمعرفة تحديثات @DJJJJJe",
+    "logo": "https://telegra.ph/file/e77857a6510df13b1b2d3.jpg",
+    "keywords": [
+        "pytgcalls",
+        "telegram bot",
+        "video stream",
+        "pyrogram"
+    ],
+    "website": "https://t.me/GGG66",
+    "repository": "https://github.com/tesla0T/Sources-1",
+    "success_url": "https://t.me/vrrrrvr",
+    "env": {
+        "API_ID": {
+            "description": "قم بوضع الايبي ايدي هنا",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "قم بوضع الايبي هاش",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "قم بوضع توكن البوت الخاص بك هنا",
+            "required": true,
+            "value": "2075679625:AAE8xn5yYTBUvH4g2mA8x3K_uP3h_XIBPIM"
+        },
+        "BOT_USERNAME": {
+            "description": "قم بوضع يوزر بوتك بدون علامة @",
+            "required": true,
+            "value": "CX2XBOT"
+        },
+        "ASSISTANT_NAME": {
+            "description": "قم بوضع يوزر الحساب المساعد بدون علامة @",
+            "required": true,
+            "value": "CXCXX2"
+        },
+        "SESSION_NAME": {
+            "description": "قم بوضع كود تيرمكس هنا",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "قم بوضع ايدي المطور الاساسي",
+            "required": true,
+            "value": "1005593710"
+        },
+        "GROUP_SUPPORT": {
+            "description": "ضع هنا يوزر جروبك بدون علامة @",
+            "required": true,
+            "value": "T9T99T"
+        },
+        "UPDATES_CHANNEL": {
+            "description": "ضع هنا يوزر قناتك بدون علامة @",
+            "required": true,
+            "value": "vrrrrvr"
+        },
+        "OWNER_NAME": {
+            "description": "ضع هنا يوزر المطور بدون علامة @",
+            "required": true,
+            "value": "GGG66"
+        },
+        "BOT_PHOTO": {
+            "description": "ضع لينك صورة البوت من هنا ",
+            "required": true,
+            "value": "https://telegra.ph/file/e43792bb92f23737c0bf2.jpg"
+        },
+        "DEV_PHOTO": {
+            "description": "ضع لينك صورة حساب مطور البوت من هنا",
+            "required": true,
+            "value": "https://telegra.ph/file/2e2a064f53abd2d6ad24c.jpg"
+        },
+        "DEV_NAME": {
+            "description": "ضع اسم حساب التليجرام الخاص بالمطور",
+            "required": true,
+            "value": "- 𝖸𝗎𝖮𝗌𝗌ᥱ𝖥 ." 
+        },
+        "ALIVE_NAME": {
+            "description": "ضع هنا اسم الحساب المساعد",
+            "required": true,
+            "value": "- 𝗮𝗟𝗘𝘅 𝗠𝗎𝘀𝗂𝖼 ."
+        },
+        "UPSTREAM_REPO": {
+            "description": "اتركه كما هوا",
+            "required": true,
+            "value": "https://github.com/tesla0T/Sources-1"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
